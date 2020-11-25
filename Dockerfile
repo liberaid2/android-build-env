@@ -11,7 +11,7 @@ ENV PATH ${PATH}:${SDK_CLI_PAHT}/bin
 
 # Update distro & download dependencies
 RUN pacman -Sy --noconfirm \
-    && pacman -S unzip jdk8-openjdk gradle wget git --noconfirm
+    && pacman -S unzip jdk-openjdk gradle wget git --noconfirm
 
 # Download android sdk tools
 RUN wget -q https://dl.google.com/android/repository/commandlinetools-linux-${SDK_CLI_VERSION}_latest.zip -O ${SDK_CLI_PAHT}.zip \
