@@ -8,6 +8,7 @@ ENV SDK_CLI_PAHT /home/sdk-tools
 ENV ANDROID_SDK_ROOT /home/android-sdk
 
 ENV PATH ${PATH}:${SDK_CLI_PAHT}/bin
+ENV JAVA_HOME /usr/lib/jvm/default
 
 # Update distro & download dependencies
 RUN pacman -Sy --noconfirm \
